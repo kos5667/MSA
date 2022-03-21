@@ -1,0 +1,21 @@
+
+spring:
+  mvc:
+    static-path-pattern: /resources/**
+  profiles:
+    active: dev
+
+#Server
+server:
+  port: 8080
+  servlet:
+    context-path: /
+
+#log
+logging:
+  level:
+    root: info
+  file:
+    name: /static/log
+    max-size: 50MB
+    max-history: 10
