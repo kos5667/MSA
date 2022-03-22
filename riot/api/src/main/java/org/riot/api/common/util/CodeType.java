@@ -1,4 +1,4 @@
-package org.api.common.util;
+package org.riot.api.common.util;
 
 public enum CodeType {
     

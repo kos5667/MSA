@@ -5,13 +5,13 @@ spring:
   profiles:
     active: dev
 
-#Server
+# Server
 server:
   port: 8080
   servlet:
     context-path: /
 
-#log
+# log
 logging:
   level:
     root: info
@@ -19,3 +19,14 @@ logging:
     name: /static/log
     max-size: 50MB
     max-history: 10
+
+# Riot developer key
+riot.dev.key: RGAPI-f043f4f2-cf82-4696-8ff9-a9d467e19c2f
+
+#swagger
+springfox:
+  documentation:
+    swagger:
+      v2:
+        path: /
+        host: localhost:8080

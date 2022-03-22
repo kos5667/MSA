@@ -1,4 +1,4 @@
-package org.apicore;
+package org.riot.apicore;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -9,8 +9,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 
-@SpringBootApplication(scanBasePackages = {"org.api"})
-@ComponentScan(basePackages = { "org.api" })
+@SpringBootApplication(scanBasePackages = {"org.riot"})
+@ComponentScan(basePackages = { "org.riot" })
 public class Application {
 
 	private Logger logger = LoggerFactory.getLogger(this.getClass());

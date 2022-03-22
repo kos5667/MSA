@@ -1,4 +1,4 @@
-package org.apicore.filter;
+package org.riot.apicore.filter;
 
 import java.io.IOException;
 

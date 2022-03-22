@@ -1,4 +1,4 @@
-package org.api.common.vo;
+package org.riot.api.common.vo;
 
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;

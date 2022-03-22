@@ -1,4 +1,4 @@
-package org.api.common.exception;
+package org.riot.api.common.exception;
 
 import java.net.ConnectException;
 import java.sql.SQLException;
@@ -14,8 +14,8 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 
-import org.api.common.util.CodeType;
-import org.api.common.vo.ResponseModel;
+import org.riot.api.common.util.CodeType;
+import org.riot.api.common.vo.ResponseModel;
 
 @RestControllerAdvice
 public class RestControllerExceptionAdvice {

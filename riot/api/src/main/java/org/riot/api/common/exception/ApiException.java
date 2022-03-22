@@ -1,6 +1,6 @@
-package org.api.common.exception;
+package org.riot.api.common.exception;
 
-import org.api.common.util.CodeType;
+import org.riot.api.common.util.CodeType;
 
 public class ApiException extends Exception {
     
