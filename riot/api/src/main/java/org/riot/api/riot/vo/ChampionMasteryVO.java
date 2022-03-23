@@ -1,15 +1,28 @@
 package org.riot.api.riot.vo;
 
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
+
+@ApiModel(value = "챔피언 숙련도 - 응답객체")
 public class ChampionMasteryVO {
 
-    private String championPointsUntilNextLevel;
-    private String chestGranted;
+    @ApiModelProperty(value = "챔피언 ID", position = 1)
     private String championId;
-    private String lastPlayTime;
+    @ApiModelProperty(value = "챔피언 레벨", position = 2)
     private String championLevel;
-    private String summonerId;
+    @ApiModelProperty(value = "챔피언 숙련도", position = 3)
     private String championPoints;
+    @ApiModelProperty(value = "상자 획득 여부", position = 4)
+    private String chestGranted;
+    @ApiModelProperty(value = "마지막 플레이 시간", position = 5)
+    private String lastPlayTime;
+    @ApiModelProperty(value = "소환사 ID", position = 6)
+    private String summonerId;
+    @ApiModelProperty(value = "현재 레벨에서 획득한 경험치", position = 7)
     private String championPointsSinceLastLevel;
+    @ApiModelProperty(value = "다음 레벨까지 필요한 경험치", position = 8)
+    private String championPointsUntilNextLevel;
+    @ApiModelProperty(value = "토큰 수", position = 9)
     private String tokensEarned;
 
     public String getChampionPointsUntilNextLevel() {
