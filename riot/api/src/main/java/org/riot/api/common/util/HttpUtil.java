@@ -24,7 +24,6 @@ public class HttpUtil {
      * @throws Exception
      */
     public String getRequest(String url) throws Exception {
-        log.info("HttpClient GET Call URL : "+url);
         HttpClient client = HttpClientBuilder.create().build();
         HttpGet request = new HttpGet(url);
         HttpResponse response = client.execute(request);
@@ -32,7 +31,6 @@ public class HttpUtil {
         if(response.getStatusLine().getStatusCode() == 200) {
             ResponseHandler<String> handler = new BasicResponseHandler();
             String body = handler.handleResponse(response);
-            log.info("Response Result : "+body);
             return body;
         } else {
             throw new ApiException(CodeType.FAIL, "Response Code : "+ response.getStatusLine().getStatusCode());
@@ -46,7 +44,6 @@ public class HttpUtil {
      * @throws Exception
      */
     public String postRequest(String url) throws Exception {
-        log.info("HttpClient POST Call URL : "+url);
         HttpClient client = HttpClientBuilder.create().build();
         HttpPost request = new HttpPost(url);
         request.setHeader("Accept", "application/json");
@@ -57,7 +54,6 @@ public class HttpUtil {
         if(response.getStatusLine().getStatusCode() == 200) {
             ResponseHandler<String> handler = new BasicResponseHandler();
             String body = handler.handleResponse(response);
-            log.info("Response Result : "+body);
             return body;
         } else {
             throw new ApiException(CodeType.FAIL, "Response Code : "+ response.getStatusLine().getStatusCode());

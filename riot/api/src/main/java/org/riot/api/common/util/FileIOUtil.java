@@ -5,7 +5,7 @@ import org.slf4j.LoggerFactory;
 
 public class FileIOUtil {
     
-    private Logger log = LoggerFactory.getLogger(this.getClass());
+    // private Logger log = LoggerFactory.getLogger(this.getClass());
     
 }
   
