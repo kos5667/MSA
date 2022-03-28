@@ -11,7 +11,6 @@ import org.riot.api.common.util.JsonUtil;
 import org.riot.api.riot.service.RiotService;
 import org.riot.api.riot.vo.ChampionMasteryVO;
 import org.riot.api.riot.vo.ChampionRotationsVO;
-import org.riot.api.riot.vo.ChampionVO;
 import org.riot.api.riot.vo.RiotRequestVO;
 import org.riot.api.riot.vo.SummonerVO;
 import org.springframework.beans.factory.annotation.Autowired;
